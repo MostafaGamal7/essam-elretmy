@@ -35,7 +35,6 @@ export default function HomePage() {
   const heroRef = useRef<HTMLElement>(null);
   const statsRef = useRef<HTMLElement>(null);
   const projectsRef = useRef<HTMLElement>(null);
-  const processRef = useRef<HTMLElement>(null);
   const experienceRef = useRef<HTMLElement>(null);
   const testimonialsRef = useRef<HTMLElement>(null);
   const contactRef = useRef<HTMLElement>(null);
@@ -43,7 +42,7 @@ export default function HomePage() {
   const sections = [
     { name: "الرئيسية", ref: heroRef },
     { name: "الإنجازات", ref: statsRef },
-    { name: "المشاريع", ref: projectsRef },
+    { name: "نبذة عنا", ref: projectsRef },
     { name: "الخبرات", ref: experienceRef },
     { name: "التواصل", ref: contactRef },
   ];
@@ -68,7 +67,6 @@ export default function HomePage() {
       heroRef,
       statsRef,
       projectsRef,
-      processRef,
       experienceRef,
       testimonialsRef,
       contactRef,
@@ -158,6 +156,20 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section ref={heroRef} id="hero" className="relative min-h-screen">
+        <div className="h-[100px] w-[250px] absolute bottom-16 left-5 z-50 hidden md:block">
+          <img
+            src="/code.png"
+            alt="Code"
+            className="h-full w-full object-contain"
+          />
+        </div>
+        <div className="h-[60px] w-[150px] absolute top-24 left-5 z-50 md:hidden">
+          <img
+            src="/code.png"
+            alt="Code"
+            className="h-full w-full object-contain"
+          />
+        </div>
         <Image
           src="/hero/bg.webp"
           alt="اللواء عصام عبد الغني الرتمي"
@@ -425,8 +437,8 @@ export default function HomePage() {
 
       {/* Professional Career Section */}
       <section
-        ref={processRef}
-        id="process"
+        ref={experienceRef}
+        id="experience"
         className="py-24 bg-blue-600 text-white"
       >
         <div className="container mx-auto px-6">
@@ -435,7 +447,7 @@ export default function HomePage() {
               {/* Left Content */}
               <div
                 className={`transition-all duration-1000 ${
-                  visibleSections.has("process")
+                  visibleSections.has("experience")
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 translate-x-10"
                 }`}
@@ -460,7 +472,7 @@ export default function HomePage() {
               {/* Right Career Steps */}
               <div
                 className={`space-y-12 transition-all duration-1000 delay-300 ${
-                  visibleSections.has("process")
+                  visibleSections.has("experience")
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 -translate-x-10"
                 }`}
