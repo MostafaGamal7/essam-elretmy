@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "الموقع الرسمي للواء عصام عبد الغني الرتمي - أمين حزب الجبهة الوطنية بمحافظة الفيوم ومرشح مجلس الشيوخ 2025",
   keywords:
     "اللواء عصام الرتمي, الفيوم, حزب الجبهة الوطنية, مجلس الشيوخ, التنمية المستدامة, مبادرة صديق",
-  generator: "v0.dev",
+  icons: "/logo.png",
 };
 
 export default function RootLayout({

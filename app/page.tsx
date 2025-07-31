@@ -5,7 +5,6 @@ import type React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   Phone,
   Mail,
@@ -23,7 +22,6 @@ import {
   X,
   CheckCircle,
   Target,
-  TrendingUp,
   Leaf,
 } from "lucide-react";
 import Image from "next/image";
@@ -167,13 +165,6 @@ export default function HomePage() {
           className="object-cover"
           priority
         />
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-32 h-32 bg-yellow-400 rounded-full"></div>
-          <div className="absolute bottom-20 left-20 w-24 h-24 bg-white rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-blue-300 rounded-full"></div>
-        </div>
-
         <div className="container mx-auto px-6 py-20">
           <div className="grid gap-12 items-center min-h-[calc(100vh-120px)]">
             {/* Content */}
