@@ -4,7 +4,7 @@ import { graphikArabic } from "@/fonts/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "اللواء عصام عبد الغني الرتمي - الموقع الرسمي",
+  title: "الصفحة الرسمية للواء عصام الرتمي - أمين حزب الجبهة الوطنية بمحافظة الفيوم",
   description:
     "الموقع الرسمي للواء عصام عبد الغني الرتمي - أمين حزب الجبهة الوطنية بمحافظة الفيوم ومرشح مجلس الشيوخ 2025",
   keywords:

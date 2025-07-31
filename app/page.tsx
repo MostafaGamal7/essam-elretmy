@@ -204,23 +204,30 @@ export default function HomePage() {
                     </p>
                   </div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-                    اللواء عصام عبد الغني الرتمي
+                    اللواء عصام الرتمي
                   </h1>
                 </div>
 
                 {/* Description */}
                 <p className="text-lg md:text-xl text-blue-100 leading-relaxed pt-4">
-                  قائد عسكري سابق ورجل أعمال ملتزم، يحمل رؤية تنموية شاملة لخدمة
-                  أبناء محافظة الفيوم وتحقيق التنمية المستدامة من خلال الخبرة
-                  العملية والالتزام المجتمعي.
+                  من ميادين الشرف إلى ميادين التنمية، ومن خدمة الوطن في جهاز
+                  الشرطة إلى خدمة المواطن في كل شارع وقرية… اللواء عصام الرتمي
+                  هو الرمز الحقيقي للإرادة، والقوة، والعمل الميداني. رجل يحمل
+                  على عاتقه حلم الفيوم في غدٍ أفضل، ويؤمن أن التنمية الحقيقية
+                  تبدأ من الناس… ولأجلهم. اختيارك له ليس مجرد صوت، بل خطوة نحو
+                  مستقبل أقوى وأعدل.
                 </p>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-[#FFCC00] rounded-full min-w-80 min-h-[70px] text-black hover:bg-yellow-300 p-[10px] text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <a
+                  href="https://www.youtube.com/watch?v=7N-DmEAGRY0"
+                  target="_blank"
+                  className="bg-[#FFCC00] text-center flex items-center justify-center rounded-full min-w-80 min-h-[70px] text-black hover:bg-yellow-300 p-[10px] text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   البرنامج الانتخابي
-                </Button>
+                </a>
                 <Button
                   variant="outline"
                   onClick={() => scrollToSection(contactRef)}
@@ -259,7 +266,7 @@ export default function HomePage() {
               }`}
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                شاركنا في تحقيق{" "}
+                تاريخ حافل من الإنجازات{" "}
               </h2>
             </div>
 
@@ -268,7 +275,7 @@ export default function HomePage() {
                 {
                   number: "19",
                   suffix: "+",
-                  label: "سنة خدمة عسكرية",
+                  label: "سنة خدمة في الشرطة",
                   description: "قيادة الأمن والإدارة، الانضباط والالتزام.",
                   color: "blue",
                 },
@@ -919,7 +926,7 @@ export default function HomePage() {
                     {
                       icon: Phone,
                       label: "رقم الهاتف",
-                      value: "01091300928",
+                      value: "201091300928+",
                       color: "green",
                     },
                     {
@@ -983,7 +990,7 @@ export default function HomePage() {
                       color: "blue",
                     },
                     {
-                      name: "صنائع MNY",
+                      name: "مصنع MNY",
                       role: "رئيس مجلس الإدارة",
                       description: "إعادة تدوير وتصنيع الورق والمنتجات البيئية",
                       color: "green",
